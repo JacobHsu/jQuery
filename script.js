@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $('.pull-me').click(function() {
-       $('.panel').slideToggle('slow');
+    $('button').click(function() {
+    	var toAdd = $("input[name=message]").val();
+        $('#messages').append("<p>"+toAdd+"</p>");
     });
 });
